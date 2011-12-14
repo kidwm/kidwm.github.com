@@ -2,7 +2,9 @@
 layout: nil
 title: WMの工房
 ---
-
+<head>
+	<link href="syntax.css" rel="stylesheet"/>
+</head>
 ### Index ###
 
 ---
@@ -18,4 +20,9 @@ title: WMの工房
 main() {
    printf("hello, world\n");
 }
+{% endhighlight %}
+
+{% highlight bash %}
+sudo apt-get install python-pygments
+pygmentize -f html -S colorful -a .highlight > syntax.css
 {% endhighlight %}
